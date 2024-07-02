@@ -1,0 +1,150 @@
+\chapter{Materials and Methods}
+\label{ChapterMethods}
+
+\section{Listed Items}
+
+\begin{itemize}
+    \item \lipsum[1][1-3]
+    \item \lipsum[1][1-3]
+    \item \lipsum[1][1-3]
+\end{itemize}
+
+\section{Numbered Items}
+
+\begin{enumerate}
+    \item \lipsum[1][1-3]
+    \item \lipsum[1][1-3]
+    \item \lipsum[1][1-3]
+\end{enumerate}
+
+\section{Nested enumeration numbering}
+
+\begin{enumerate}
+    \item \lipsum[1][1-3]
+    \begin{enumerate}
+        \item \lipsum[1][1-3]
+        \begin{enumerate}
+            \item \lipsum[1][1-3]
+        \end{enumerate}
+        \item \lipsum[1][1-3]
+    \end{enumerate}
+    \item \lipsum[1][1-3]
+\end{enumerate}
+
+\section{Equations}
+
+The approximate entropy is described in Equation \ref{eq:ApEn}. Another example is Equation \ref{eq:MyEquation}.
+
+\begin{equation}
+\label{eq:ApEn}
+ApEn(m,r,N) = \left\{\begin{array}{rc}
+\phi^m(r) - \phi^{m+1}(r), & \forall \; m\le 0\\
+- \phi^1(r), & m = 0
+\end{array}\right.,
+\end{equation}
+
+\begin{equation}
+\label{eq:MyEquation}
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.
+\end{equation}
+
+\section{Pictures}
+
+You can create geometric representations in \LaTeX.
+
+\begin{center}
+\setlength{\unitlength}{1mm}
+\begin{picture}(50,25)
+\put(0,0){\scriptsize$C$}
+\put(2,2){\circle*{0.7}}
+\put(2,2){\vector(1,0){50}} 
+\put(52,2){\circle*{0.7}}
+\put(52,0){\scriptsize$B$}
+\put(2,2){\vector(1,1){20}} 
+\put(22,22){\circle*{0.7}}
+\put(22,22.5){\scriptsize$A$}
+\put(2,2){\vector(2,1){28.5}} 
+\put(34,16){\scriptsize$X$}
+\put(30.5,16.25){\circle*{0.7}}
+\put(22,22){\line(3,-2){30}} 
+\end{picture}
+\end{center}
+
+\section{Code}
+
+You can insert scripts into your text.
+
+\subsection{R}
+
+The code below illustrates a code snippet in the R language \cite{RCT2021}.
+
+\begin{minted}{R}
+# Creating a Graph
+attach(mtcars)
+plot(wt, mpg)
+abline(lm(mpg~wt))
+title("Regression of MPG on Weight")
+\end{minted}
+
+% \subsection{Python}
+
+% \begin{lstlisting}[language=Python, caption=Python example]
+% import numpy as np
+    
+% def incmatrix(genl1,genl2):
+%     m = len(genl1)
+%     n = len(genl2)
+%     M = None #to become the incidence matrix
+%     VT = np.zeros((n*m,1), int)  #dummy variable
+    
+%     #compute the bitwise xor matrix
+%     M1 = bitxormatrix(genl1)
+%     M2 = np.triu(bitxormatrix(genl2),1) 
+
+%     for i in range(m-1):
+%         for j in range(i+1, m):
+%             [r,c] = np.where(M2 == M1[i,j])
+%             for k in range(len(r)):
+%                 VT[(i)*n + r[k]] = 1;
+%                 VT[(i)*n + c[k]] = 1;
+%                 VT[(j)*n + r[k]] = 1;
+%                 VT[(j)*n + c[k]] = 1;
+                
+%                 if M is None:
+%                     M = np.copy(VT)
+%                 else:
+%                     M = np.concatenate((M, VT), 1)
+                
+%                 VT = np.zeros((n*m,1), int)
+    
+%     return M
+% \end{lstlisting}
+
+\section{Algorithms}
+
+Algorithm \ref{alg:cap} is an example.
+
+\begin{algorithm}
+\caption{An algorithm with caption}\label{alg:cap}
+\begin{algorithmic}
+\Require $n \geq 0$
+\Ensure $y = x^n$
+\State $y \gets 1$
+\State $X \gets x$
+\State $N \gets n$
+\While{$N \neq 0$}
+\If{$N$ is even}
+    \State $X \gets X \times X$
+    \State $N \gets \frac{N}{2}$  \Comment{This is a comment}
+\ElsIf{$N$ is odd}
+    \State $y \gets y \times X$
+    \State $N \gets N - 1$
+\EndIf
+\EndWhile
+\end{algorithmic}
+\end{algorithm}
+
+
+\section{References}
+
+This template uses the ABNT standards to present the references. You can use the number style or the author-date style.

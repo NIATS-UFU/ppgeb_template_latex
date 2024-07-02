@@ -1,0 +1,30 @@
+\chapter{Results} 
+\label{ChapterResults}
+
+\section{Figures}
+
+Figure \ref{fig:MyFigure} illustrates an example of a \LaTeX figure.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale = 2]{LogoUFU.pdf}
+\caption{\lipsum[1][1-3]}
+\label{fig:MyFigure}
+\end{figure}
+
+\section{Tables}
+
+Table \ref{tab:MyTable} illustrates an example of a \LaTeX table.
+
+\begin{table}[!h]
+\centering
+\caption{\lipsum[1][1-2]} 
+\label{tab:MyTable}
+\begin{tabularx}{\textwidth}{c|c|cc}\toprule
+% Header
+Variable 1  & Variable 2 & Variable 3 & Variable 4 \\ \midrule
+row 1 and column 1  & row 1 and column 2 & row 1 and column 3 & row 1 and column 4 \\
+row 2 and column 1  & row 2 and column 2 & row 2 and column 3 & row 2 and column 4 \\
+ \bottomrule
+\end{tabularx}
+\end{table}

@@ -1,0 +1,101 @@
+% Call the PPGEB document class
+% numeric: ABNT numeric style
+% autordata: ABNT autor-date style
+% portuguese: for documents written in Portuguese
+% english: for documents written in English
+% article: include this option to mimic the article document class
+\documentclass[numeric, english]{ppgeb}
+% Set the folder in which all the figures are placed
+\graphicspath{{./Figs/}}
+
+% Add the reference file (if you have more files you can include them by adding their names)
+\addbibresource{ref.bib} 
+
+\begin{document}
+
+%include coverpage, front page, catalographic sheet and minute of defence. You can edit the data in the preable.tex file
+\include{preamble}
+
+% Acknowledgements and dedication
+\include{acknowledgements}
+
+% Abstract in English
+\include{abstract}
+
+% change page numbering style
+\pagenumbering{roman}
+
+% print the list of figures
+\listoffigures
+\clearpage
+
+% print the list of tables
+\listoftables
+
+% print the glossary
+\input{glossary} 
+
+% print the table of contents
+\tableofcontents*
+\clearpage
+
+
+\pagenumbering{arabic}
+
+
+\pagestyle{ruled}
+
+% bianchi, bringhurst, brotherton, chappell, crosshead, culver, dash, demo2, demo3, dowding, ell, ger, komalike, lyhne, madsen, ntglike, pedersen, southall, tandh, thatcher, veelo, verville, wilsondob, report, article
+\chapterstyle{ell}
+
+% Introdução
+% ---
+\input{chapter_introduction}
+
+% ---
+% Revisão Bibliográfica
+% ---
+% \input{revisao_bibliografica}
+
+% ---
+% Métodos
+% ---
+\input{chapter_methods}
+
+% ---
+% Results
+% ---
+\input{chapter_results}
+
+% ---
+% Discussion
+% ---
+\input{chapter_discussion}
+
+% ---
+% Conclusion
+% ---
+\input{chapter_conclusion}
+
+
+{
+ \chapterstyle{default}
+ \printbibliography
+
+\printglossary [style=altlist,title= {Glossary}]
+\clearpage
+}
+
+%% APPENDICES
+% Include appendices here (after the command \appendix)
+\appendix
+\input{apendice}
+
+% índice remissivo
+{
+   \chapterstyle{default}
+   \setindexname{Índice} % Título do índice remissivo
+   \printindex % impressão do índice remissivo
+}
+	
+\end{document}
