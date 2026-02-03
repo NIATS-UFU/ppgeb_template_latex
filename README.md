@@ -1,12 +1,14 @@
-# PPGEB template
+<div id="home" align="left"></div>
+
+# PPGEB-UFU template
 
 > This repository contains a document template for final coursework, dissertation, and thesis for the Undergraduate and Graduate Programs in Biomedical Engineering at the Federal University of Uberlândia.
 
-## Preview
+## 🪄 Preview
 
 |Cover | Contents | Content example |
 | :---: | :---: | :---: |
-| <img width="604" height="858" alt="image" src="https://github.com/user-attachments/assets/7cb45013-5846-41a7-8f07-7305253d956a" /> |  <img width="604" height="858" alt="image" src="https://github.com/user-attachments/assets/ebf06bc7-d77c-41c2-957d-496f7a1539fd" /> | <img width="604" height="858" alt="image" src="https://github.com/user-attachments/assets/a2f3a869-1cf0-4ef5-b87f-0197a621342f" /> |
+| <img width="605" height="860" alt="image" src="https://github.com/user-attachments/assets/7cb45013-5846-41a7-8f07-7305253d956a" /> |  <img width="600" height="858" alt="image" src="https://github.com/user-attachments/assets/ebf06bc7-d77c-41c2-957d-496f7a1539fd" /> | <img width="600" height="858" alt="image" src="https://github.com/user-attachments/assets/a2f3a869-1cf0-4ef5-b87f-0197a621342f" /> |
 
 ## 🗂 Project structure
 
@@ -64,19 +66,19 @@ This LaTeX template can be compiled to PDF either **locally** on your computer o
 
 To compile the document locally, make sure the following requirements are met:
 
-#### Requirements
+#### 🪛 Requirements
 
 - **LaTeX distribution**:  
-  - Linux/macOS: TeX Live  
-  - Windows: MiKTeX
+  - Linux/macOS: [TeX Live](https://www.tug.org/texlive/)  
+  - Windows: [MiKTeX](https://miktex.org)
 
 - **PDF compiler**:  
   - `pdflatex` or `lualatex`  
   - Recommended: `latexmk` for automatic compilation of multiple passes
 
 - *LaTeX editor*:
-  - a LaTeX or code editor, like [TeX MAKER](https://www.xm1math.net/texmaker/), [TeXStudio](https://www.texstudio.org) or [VSCodium](https://vscodium.com)
-  -       
+  - a LaTeX or code editor, such as [TeX MAKER](https://www.xm1math.net/texmaker/), [TeXStudio](https://www.texstudio.org) or [VSCodium](https://vscodium.com)
+          
 - **Required LaTeX packages** (usually included in standard distributions):  
   - `graphicx` (for including images)  
   - `subcaption` (for subfigures)  
@@ -88,4 +90,25 @@ To compile the document locally, make sure the following requirements are met:
 - **Bibliography management**:  
   - a reference manager like [Jabref](https://www.jabref.org)
 
+## 🍰 How to Contribute
+If you would like to contribute, please follow these steps:
 
+1. Fork this repository.
+2. Create a new branch for your changes (`git checkout -b feature-name`).
+3. Make your changes and commit them (`git commit -m "📝 Describe your changes"`).
+4. Push the branch to your fork (`git push origin feature-name`).
+5. Open a pull request on the main repository.
+
+## 📬 Questions?
+
+If you have any questions or need help using this template, feel free to open an issue or contact the repository maintainer.
+
+<div> 
+  <a href = "mailto:arianacabral57@ufu.br"><img src="https://img.shields.io/badge/-UFU-%23337?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+ <a href = "mailto:adriano@ufu.br"><img src="https://img.shields.io/badge/-UFU-%23337?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+</div>
+
+
+<div align="right">
+    <b><a href="#home">▲ top</a></b>
+</div>
