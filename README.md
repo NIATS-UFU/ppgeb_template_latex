@@ -115,7 +115,7 @@ In addition, you can configure a shortcut to automatically compile the document 
 
 ⚠️ **Atention:** In this case, you can specify the absolute path to your PDF reader executable (e.g., `C:/Program Files/Adobe/Acrobat DC/Acrobat/Acrobat.exe`).
 
-## 🍰 How to Contribute
+## 🍰 How to Contribute?
 If you would like to contribute, please follow these steps:
 
 1. Fork this repository.
