@@ -79,16 +79,33 @@ To compile the document locally, make sure the following requirements are met:
 - **LaTeX editor**:
   - a LaTeX or code editor, such as [TeX MAKER](https://www.xm1math.net/texmaker/), [TeXStudio](https://www.texstudio.org) or [VSCodium](https://vscodium.com)
           
-- **Required LaTeX packages** (usually included in standard distributions):  
+- **Required LaTeX packages** (most of them are included in standard LaTeX distributions):  
   - `graphicx` (for including images)  
   - `subcaption` (for subfigures)  
   - `amsmath`, `amssymb` (for math symbols)  
   - `tcolorbox` (for boxes and highlights)
   - `hyperref` (for urls)
   - `longtable`, `tabularx`, `xltabular` (for tables)
+  - `listings` (for source code formatting)
     
 - **Bibliography management**:  
   - a reference manager like [Jabref](https://www.jabref.org)
+
+#### Useful shortcuts to make your life easier
+
+- **Glossaries and acronyms**
+
+This template uses the `glossaries` package to generate glossaries and acronyms.
+
+When compiling the document **locally**, you can configure a custom command to run makeglossaries directly from the editor menu.
+
+    - 🔧 How to configure
+      1. Open TeXstudio
+      2. Go to: `Options` → `Configure TeXstudio` → `Build`
+      3. Click on `User Commands`
+      4. Add a new command with the following settings:
+        - Menu item name: `makeglossaries`
+        - Command: `makeglossaries %`
 
 ## 🍰 How to Contribute
 If you would like to contribute, please follow these steps:
