@@ -91,19 +91,14 @@ To compile the document locally, make sure the following requirements are met:
 - **Bibliography management**:  
   - a reference manager like [Jabref](https://www.jabref.org)
 
-#### Useful shortcuts to make your life easier
+#### 🏷 Useful shortcuts to make your life easier
 
-- **Glossaries and acronyms**
+This template uses the `glossaries` package to generate glossaries and acronyms. When compiling the document **locally**, you can configure a custom command to run `makeglossaries` directly from the editor menu.
 
-This template uses the `glossaries` package to generate glossaries and acronyms.
-
-When compiling the document **locally**, you can configure a custom command to run makeglossaries directly from the editor menu.
-
-    - 🔧 How to configure
-      1. Open TeXstudio
-      2. Go to: `Options` → `Configure TeXstudio` → `Build`
-      3. Click on `User Commands`
-      4. Add a new command with the following settings:
+ - **🔧 How to configure in TeX MAKER**
+    1. Open TeX MAKER
+    2. Go to: `Users` → `User commands` → `Edit user commands`
+    4. Add a new command with the following settings:
         - Menu item name: `makeglossaries`
         - Command: `makeglossaries %`
 
