@@ -15,7 +15,7 @@
 ## 🗂 Project structure
 
 ```text
-project-root/
+./
 │   .gitignore                       # This file can be removed
 │   main.pdf                         # Final document example 
 │   main.tex                         # Main LaTeX file
