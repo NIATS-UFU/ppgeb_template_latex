@@ -91,16 +91,27 @@ To compile the document locally, make sure the following requirements are met:
 - **Bibliography management**:  
   - a reference manager like [Jabref](https://www.jabref.org)
 
-#### 🏷 Useful shortcuts to make your life easier
+#### ⚡Useful shortcuts to make your life easier
 
 This template uses the `glossaries` package to generate glossaries and acronyms. When compiling the document **locally**, you can configure a custom command to run `makeglossaries` directly from the editor menu.
 
- - **🔧 How to configure in TeX MAKER**
-    1. Open TeX MAKER
-    2. Go to: `Users` → `User commands` → `Edit user commands`
-    4. Add a new command with the following settings:
+- **🔧 How to configure in TeX MAKER**
+     1. Open TeX MAKER
+     2. Go to: `Users` → `User commands` → `Edit user commands`
+     3. Add a new command with the following settings:
         - Menu item name: `makeglossaries`
         - Command: `makeglossaries %`
+
+In addition, you can configure a shortcut to automatically compile the document using `latexmk`.  
+       
+- **🔧 How to configure in TeX MAKER**
+     1. Open TeX MAKER
+     2. Go to: `Users` → `User commands` → `Edit user commands`
+     3. Add a new command with the following settings:
+        - Menu item name: `latexmk`
+        - Command: `latexmk -synctex=1 -interaction=nonstopmode -bibtex -pdf  %.tex | "C:/Program Files/Adobe/Acrobat DC/Acrobat/Acrobat.exe" %.pdf`
+
+**Atention:** In this case, you can specify the absolute path to your PDF reader executable (e.g., `C:/Program Files/Adobe/Acrobat DC/Acrobat/Acrobat.exe`).
 
 ## 🍰 How to Contribute
 If you would like to contribute, please follow these steps:
