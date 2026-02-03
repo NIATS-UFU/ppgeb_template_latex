@@ -2,7 +2,7 @@
 
 > This repository contains a document template for final coursework, dissertation, and thesis for the Undergraduate and Graduate Programs in Biomedical Engineering at the Federal University of Uberlândia.
 
-## Project structure
+## 🗂 Project structure
 
 ```text
 project-root/
@@ -21,10 +21,10 @@ project-root/
 │       chapter_methods.tex
 │       chapter_results.tex
 │
-├───figs                            # Directory containing the figures used
+├───figs                   # Directory containing the figures used
 │   │   LogoUFU.pdf
 │   │
-│   └───template                    # This folder is intended solely for documents pertaining to the institution's logo, defense minutes, and catalog cards.
+│   └───template           # This folder is intended solely for documents pertaining to the institution's logo, defense minutes, and catalog cards.
    
 │           AtaDeDefesa.pdf
 │           FichaCatalografica.pdf
