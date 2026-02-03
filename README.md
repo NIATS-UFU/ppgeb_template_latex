@@ -76,7 +76,7 @@ To compile the document locally, make sure the following requirements are met:
   - `pdflatex` or `lualatex`  
   - Recommended: `latexmk` for automatic compilation of multiple passes
 
-- *LaTeX editor*:
+- **LaTeX editor**:
   - a LaTeX or code editor, such as [TeX MAKER](https://www.xm1math.net/texmaker/), [TeXStudio](https://www.texstudio.org) or [VSCodium](https://vscodium.com)
           
 - **Required LaTeX packages** (usually included in standard distributions):  
