@@ -115,6 +115,16 @@ In addition, you can configure a shortcut to automatically compile the document 
 
 ⚠️ **Atention:** In this case, you can specify the absolute path to your PDF reader executable (e.g., `C:/Program Files/Adobe/Acrobat DC/Acrobat/Acrobat.exe`).
 
+## 🧬 Installation or Project Download
+
+If you are a Git user, you can clone the project using:
+
+```
+git clone https://github.com/NIATS-UFU/ppgeb_template_latex.git
+```
+
+Alternatively, you can <a href="https://github.com/NIATS-UFU/ppgeb_template_latex/archive/refs/heads/main.zip">download the project as a ZIP file</a>.
+
 ## 🍰 How to Contribute?
 If you would like to contribute, please follow these steps:
 
