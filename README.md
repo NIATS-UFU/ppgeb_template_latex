@@ -10,6 +10,8 @@
 | :---: | :---: | :---: |
 | <img width="605" height="860" alt="image" src="https://github.com/user-attachments/assets/7cb45013-5846-41a7-8f07-7305253d956a" /> |  <img width="600" height="858" alt="image" src="https://github.com/user-attachments/assets/ebf06bc7-d77c-41c2-957d-496f7a1539fd" /> | <img width="600" height="858" alt="image" src="https://github.com/user-attachments/assets/a2f3a869-1cf0-4ef5-b87f-0197a621342f" /> |
 
+👉 [Click here to view the compiled PDF](main.pdf)
+
 ## 🗂 Project structure
 
 ```text
