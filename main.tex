@@ -5,22 +5,24 @@
 % english: for documents written in English
 % article: include this option to mimic the article document class
 \documentclass[numeric, english]{ppgeb}
+\usepackage{listings}
+
 % Set the folder in which all the figures are placed
-\graphicspath{{./Figs/}}
+\graphicspath{{./figs/}}
 
 % Add the reference file (if you have more files you can include them by adding their names)
-\addbibresource{ref.bib} 
+\addbibresource{references/ref.bib} 
 
 \begin{document}
 
 %include coverpage, front page, catalographic sheet and minute of defence. You can edit the data in the preable.tex file
-\include{preamble}
+\include{pretextual/preamble}
 
 % Acknowledgements and dedication
-\include{acknowledgements}
+\include{pretextual/acknowledgements}
 
 % Abstract in English
-\include{abstract}
+\include{pretextual/abstract}
 
 % change page numbering style
 \pagenumbering{roman}
@@ -33,69 +35,72 @@
 \listoftables
 
 % print the glossary
-\input{glossary} 
+\input{pretextual/glossary} 
 
 % print the table of contents
 \tableofcontents*
 \clearpage
 
-
+% change page numbering style
 \pagenumbering{arabic}
 
-
+% change page style
 \pagestyle{ruled}
 
+% set chapther style -- you can change the chapter style by choosing one of the options below:
 % bianchi, bringhurst, brotherton, chappell, crosshead, culver, dash, demo2, demo3, dowding, ell, ger, komalike, lyhne, madsen, ntglike, pedersen, southall, tandh, thatcher, veelo, verville, wilsondob, report, article
 \chapterstyle{ell}
 
-% Introdução
+% Introduction
 % ---
-\input{chapter_introduction}
+\input{chapters/chapter_introduction}
 
 % ---
-% Revisão Bibliográfica
+% Methods
 % ---
-% \input{revisao_bibliografica}
-
-% ---
-% Métodos
-% ---
-\input{chapter_methods}
+\input{chapters/chapter_methods}
 
 % ---
 % Results
 % ---
-\input{chapter_results}
+\input{chapters/chapter_results}
 
 % ---
 % Discussion
 % ---
-\input{chapter_discussion}
+\input{chapters/chapter_discussion}
 
 % ---
 % Conclusion
 % ---
-\input{chapter_conclusion}
+\input{chapters/chapter_conclusion}
 
 
 {
+% ---
+% References
+% ---
  \chapterstyle{default}
  \printbibliography
 
+% ---
+% Glossary
+% ---
 \printglossary [style=altlist,title= {Glossary}]
 \clearpage
 }
 
-%% APPENDICES
+
+%% Appendices
 % Include appendices here (after the command \appendix)
 \appendix
-\input{apendice}
+\input{postextual/appendix1}
 
-% índice remissivo
+
 {
    \chapterstyle{default}
    \setindexname{Índice} % Título do índice remissivo
-   \printindex % impressão do índice remissivo
+   \printindex % print index
 }
 	
 \end{document}

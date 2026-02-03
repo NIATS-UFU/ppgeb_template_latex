@@ -12,6 +12,26 @@ Figure \ref{fig:MyFigure} illustrates an example of a \LaTeX figure.
 \label{fig:MyFigure}
 \end{figure}
 
+It is possible to insert several images in one figure, each one with its own reference and label, as shown in Figure \ref{fig:MyFigure2}. In this case, you can mention Figure \ref{fig:SubFigure1} or Figure \ref{fig:SubFigure2}.
+
+\begin{figure}[b]
+
+\begin{subfigure}{0.5\textwidth}
+\centering
+\includegraphics[scale = 2]{LogoUFU} 
+\caption{Caption1}
+\label{fig:SubFigure1}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\centering
+\includegraphics[scale = 2]{LogoUFU}
+\caption{Caption 2}
+\label{fig:SubFigure2}
+\end{subfigure}
+\caption{Caption for this figure with two images.}
+\label{fig:MyFigure2}
+\end{figure}
+
 \section{Tables}
 
 Table \ref{tab:MyTable} illustrates an example of a \LaTeX table.

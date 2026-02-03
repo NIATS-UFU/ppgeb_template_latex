@@ -1,7 +1,7 @@
 % Class identification
 %========================================================================
 \NeedsTeXFormat{LaTeX2e}[2023/04/24]
-\ProvidesClass{ppgeb}[2023/04/24 v1.01 by Prof. Adriano de Oliveira Andrade, PhD - adriano@ufu.br]
+\ProvidesClass{ppgeb}[2024/06/24 (v 02.00) - by Prof. Adriano de Oliveira Andrade, PhD (adriano@ufu.br), and modified by Ariana Moura Cabral]
 
 % Inherited class - memoir
 %========================================================================
@@ -36,8 +36,8 @@ hypertexnames=true,
             urlcolor  = blue,
             citecolor = black,
             anchorcolor = black]{hyperref}
-            
-\RequirePackage {graphicx}     
+\RequirePackage {graphicx}
+\RequirePackage{subcaption}     
 \RequirePackage {lipsum} 
 \RequirePackage{pdfpages}
 \RequirePackage{indentfirst}
@@ -134,7 +134,7 @@ hypertexnames=true,
 	{\large \MakeUppercase{\instname}} \\[0.25 cm]
 	{\large \faculty} \\[0.25 cm]
 	{\large \postgradprogram} \\[3cm]
-    \includegraphics[scale=1.5]{LogoUFU.pdf} \\[3cm]
+    \includegraphics[scale=1.5]{template/Logo.pdf} \\[3cm]
 	{\large \asuauthor}\\[3cm]
 	{\large \asutitle} \\
     \vspace*{\fill}
@@ -165,12 +165,12 @@ hypertexnames=true,
 \thispagestyle{empty}
 \centering
 \vspace*{\fill}
-\includegraphics[scale=1.0, origin=RT]{FichaCatalografica.pdf}
+\includegraphics[scale=1.0, origin=RT]{template/FichaCatalografica.pdf}
 \clearpage}}
 
 \newcommand{\minuteofdefence}{{%
 \thispagestyle{empty}
-\includepdf[pages=-]{AtaDeDefesa.pdf}
+\includepdf[pages=-]{template/AtaDeDefesa.pdf}
 }}
 
 %%% general macro for Abstract, etc., headings
@@ -216,3 +216,35 @@ hypertexnames=true,
 \end{flushright}
 	\clearpage
 }}
+
+%%%%%%%%%%%%%%%%% Colouring source code %%%%%%%%%%%%%%%%%
+
+%% colours
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{codebackcolour}{rgb}{0.969, 0.969, 0.969} 
+
+%% custom style
+\lstdefinestyle{ppgebstyle}{
+    backgroundcolor=\color{codebackcolour},   
+    commentstyle=\color{codepurple},
+    keywordstyle=\color{NavyBlue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codegreen},
+    basicstyle=\ttfamily\footnotesize\bfseries,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=t,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+% setting up the custom style
+\lstset{style=ppgebstyle}
+
