@@ -134,6 +134,15 @@ If you would like to contribute, please follow these steps:
 4. Push the branch to your fork (`git push origin feature-name`).
 5. Open a pull request on the main repository.
 
+## 🤝 Support
+
+Found a bug or have an idea?
+
+- Open an **Issue** for bug reports.
+- Start a **Discussion** for suggestions or questions.
+
+Your feedback helps improve the project.
+
 ## 📬 Questions?
 
 If you have any questions or need help using this template, feel free to open an issue or contact the repository maintainer.
