@@ -113,7 +113,49 @@ In addition, you can configure a shortcut to automatically compile the document 
         - Menu item name: `latexmk`
         - Command: `latexmk -synctex=1 -interaction=nonstopmode -bibtex -pdf  %.tex | "C:/Program Files/Adobe/Acrobat DC/Acrobat/Acrobat.exe" %.pdf`
 
-⚠️ **Atention:** In this case, you can specify the absolute path to your PDF reader executable (e.g., `C:/Program Files/Adobe/Acrobat DC/Acrobat/Acrobat.exe`).
+> ⚠️ **Atention:** In this case, you can specify the absolute path to your PDF reader executable (e.g., `C:/Program Files/Adobe/Acrobat DC/Acrobat/Acrobat.exe`).
+
+This template also uses the `minted` package, which relies on `Pygments`, a **Python** library, to colour source code. Because of this, the *LaTeX* compiler needs to execute external commands — something that is disabled by default for security reasons.
+
+**Step 1: Check if Python and Pygments are installed**
+
+Open PowerShell and type:
+
+```{python}
+python --version
+```
+
+If you see something like Python ``3.x.x``, great. In case you don't have Python already, you can download it from [here](https://www.python.org/downloads).
+
+Now check Pygments:
+
+```{python}
+python -m pygments -V
+```
+
+If you see something like ``Pygments`` version ``2.x.x``, everything is fine. If you get an error such as ``pygmentize not recognized``, install ``Pygments`` with:
+
+**Step 2: Compile with ``-shell-escape``**
+
+Since minted needs to call ``Pygments``, which is an external program, you need to allow the LaTeX processor to do so by passing it the -shell-escape option. So you need to call the processor like this
+
+Instead of compiling with
+
+```
+pdflatex main.tex
+```
+
+use
+
+```
+pdflatex -shell-escape main.tex
+```
+
+Or, if you use latexmk (recommended):
+
+```
+latexmk -pdf -shell-escape main.tex
+```
 
 ## 🧬 Installation or Project Download
 
