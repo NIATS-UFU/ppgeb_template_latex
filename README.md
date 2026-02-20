@@ -135,6 +135,10 @@ python -m pygments -V
 
 If you see something like ``Pygments`` version ``2.x.x``, everything is fine. If you get an error such as ``pygmentize not recognized``, install ``Pygments`` with:
 
+```{python}
+pip install Pygments
+```
+
 **Step 2: Compile with ``-shell-escape``**
 
 Since minted needs to call ``Pygments``, which is an external program, you need to allow the LaTeX processor to do so by passing it the -shell-escape option. So you need to call the processor like this
