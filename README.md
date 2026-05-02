@@ -22,7 +22,6 @@
 │   ppgeb.cls                        # Custom document class
 │   README.md                        # This file can be removed
 │   titlepage.tex
-│   tree.txt
 │
 ├───chapters   # Document chapters
 │       chapter_conclusion.tex
